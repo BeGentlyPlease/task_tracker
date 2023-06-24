@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:task_tracker/core/routing/router.dart';
 
 import 'generated/l10n.dart';
 
@@ -12,7 +13,8 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: router,
       localizationsDelegates: const [
         S.delegate,
         GlobalWidgetsLocalizations.delegate,

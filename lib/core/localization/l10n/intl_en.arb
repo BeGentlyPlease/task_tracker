@@ -1,1 +1,4 @@
-{}
+{
+    "blankScreen": "Blank screen",
+    "currentPath": "Current path: {path}"
+}

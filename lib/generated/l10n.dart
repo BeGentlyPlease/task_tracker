@@ -49,6 +49,26 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Blank screen`
+  String get blankScreen {
+    return Intl.message(
+      'Blank screen',
+      name: 'blankScreen',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Current path: {path}`
+  String currentPath(Object path) {
+    return Intl.message(
+      'Current path: $path',
+      name: 'currentPath',
+      desc: '',
+      args: [path],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
