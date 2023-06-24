@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:task_tracker/core/routing/routing.dart';
+import 'package:task_tracker/core/routing/router.dart';
 
 import 'generated/l10n.dart';
 
